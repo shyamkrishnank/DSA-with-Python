@@ -7,7 +7,7 @@ def pivot(arr,pivot_index,end_index):
    arr[pivot_index],arr[swap_index] = arr[swap_index],arr[pivot_index]
    return swap_index
 def quick(arr,left,right):
-   if left < right
+   if left < right:
        pivot_index = pivot(arr,left,right)
        left = quick(arr,left,pivot_index-1)
        right = quick(arr,pivot_index+1,right)
